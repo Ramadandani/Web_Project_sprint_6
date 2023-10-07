@@ -1,0 +1,73 @@
+.content__images-id {
+    background-color: #fff;
+    margin-top: -4px;
+    width: 282px;
+    height: 79px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.content__images-id-name {
+    font-size: 24px;
+    line-height: 29px;
+    font-weight: 900;
+    margin-top: 25px;
+    margin-left: 21px;
+    width: 200px;
+    height: 30px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-align: left;
+    background-color: #fff;
+    -o-text-overflow: ellipsis;
+       text-overflow: ellipsis;
+}
+
+.content__images-id-button {
+    font-size: 35px;
+    background-image: url(../../../../images/content_love.jpg);
+    background-size: cover;
+    width: 21px;
+    height: 19px;
+    border: none;
+    margin-top: 30px;
+    margin-right: 20px;
+    background-color: transparent;
+    overflow: auto;
+    
+}
+
+.content__images-id-button:hover {
+    opacity: 50%;
+    cursor: pointer;
+    
+
+}
+@keyframes liked {
+    0% {
+        transform: scale(150%);
+    }
+    100% {
+        transform: scale(100%);
+    }
+}
+
+.content__images-id-liked {
+    background-image: url(../../../../images/content_love1.jpg);
+    animation-name: liked;
+    animation-duration: .5s;
+}
+
+.content__images-id-liked:hover {
+    opacity: 1;
+}

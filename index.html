@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Sprint 6 Javascript</title>
+</head>
+<body class="page">
+    <div class="body">
+        <header class="header">
+            <img src="./images/logo_header.png" alt="logo header" class="header__logo">
+            <img src="./images/header_line.jpg" alt="garis lurus" class="header__line">
+        </header>
+        <nav class="navigation">
+            <div class="navigation__image">
+                <div class="navigation__image-border">
+                    <img src="./images/ramadan1.jpg" alt="foto Ramadan" class="navigation__image-border-me">
+                </div>
+            </div>
+            <div class="navigation__id">
+                <h2 class="navigation__id-name">Ramadan</h2>
+                <button type="button" class="show_popup_edit-btn"></button>
+                <h5 class="navigation__id-job">Civil Engineering</h5>
+            </div>
+            <button class="show_popup_add-btn" type="button"></button>
+        </nav>
+        <main class="content">
+            <template class=" content content--gallery">
+                <div class="content__images">
+                    <button type="button" class="content__images-delete" aria-label="delete_button"></button>
+                    <div>
+                        <img src="./images/content_1.jpg" alt="Pemandangan Gunung Semeru di Salatiga" class="content__images-list">
+                        
+                        <div class="content__images-id">
+                            <p class="content__images-id-name">Salatiga</p>
+                            <button type="button" id="like" class="content__images-id-button" aria-label="love"></button>
+                        </div>
+                    </div>
+                </div>
+            </template>
+        </main>
+        <footer class="footer">
+            <h5 class="footer__copyright">© 2023 Ramadan Around The I.D.</h5>
+        </footer>
+    </div>
+    <div class="popup">
+        <!-- Popup Edit Name -->
+        <div class="popup__ename">
+            <h2 class="popup__ename-title">Edit Profil</h2>
+            <button class="close_popup_edit-btn"></button>
+            <div class="popup__ename-form">
+                <input type="text" name="nama" id="nama" placeholder="Nama" class="popup__ename-form-text">
+            </div>
+            <div class="popup__ename-form">
+                <input type="text" name="job" id="job" placeholder="Job" class="popup__ename-form-text">
+            </div>
+            <div class="popup__ename-button">
+                <input type="submit" value="Simpan" class="popup__ename-button-submit">
+            </div>
+        </div>
+        <!-- Popup View Picture -->
+        <div class="popup__vpicture">
+                <img src="./images/content_1.jpg" alt="" class="popup__vpicture-pic">
+                <button class="popup_vpicture_close-btn"></button>
+                <p class="popup__vpicture-place">Salatiga</p>
+        </div>
+        <!-- Popup Add Picture -->
+        <div class="popup__apicture">
+            <h2 class="popup__apicture-title">Tempat Baru</h2>
+            <button class="popup_apicture_close-btn"></button>
+            <div class="popup__apicture-form">
+                <input type="text" name="Judul" id="Judul" placeholder="Judul" class="popup__apicture-form-text">
+            </div>
+            <div class="popup__apicture-form">
+                <input type="text" name="url" id="url" placeholder="URL Gambar" class="popup__apicture-form-text">
+            </div>
+            <div class="popup__apicture-button">
+                <input type="submit" value="Simpan" class="popup__apicture-button-submit">
+            </div>
+        </div>
+    </div>
+    <script src="./script/index.js"></script>
+</body>
+</html>

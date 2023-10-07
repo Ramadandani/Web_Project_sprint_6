@@ -1,0 +1,11 @@
+.popup__ename-open {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    z-index: 5;
+    opacity: 1;
+    background-color: #fff;
+    transform: translate(-50%,-50%);
+    
+    
+}

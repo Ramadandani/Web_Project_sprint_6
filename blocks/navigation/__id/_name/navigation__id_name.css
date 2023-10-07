@@ -1,0 +1,24 @@
+.navigation__id-name {
+    color: #fff;
+    font-size: 42px;
+    font-weight: 500;
+    line-height: 48px;
+    grid-area: name;
+    margin-top: 20px;
+    margin-left: 3.75px;
+    margin-bottom: 0px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+@media (max-width: 320px ){
+    .navigation__id-name {
+        text-align: center;
+        font-size:  22px;
+        line-height: 26.63px;
+        font-weight: 500;
+        margin-top: 26.25px;
+        margin-left: 0;
+    }
+}

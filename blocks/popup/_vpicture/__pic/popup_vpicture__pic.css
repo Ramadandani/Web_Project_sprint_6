@@ -1,0 +1,6 @@
+.popup__vpicture-pic {
+    height: 448px;
+    width: 448px;
+    background-size: cover;
+    box-sizing: border-box;
+}

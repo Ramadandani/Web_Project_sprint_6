@@ -1,0 +1,10 @@
+.header__line {
+    margin-top: 41px;
+}
+
+@media (max-width: 320px ){
+    .header__line {
+        width: 320px;
+        margin-left: 0;
+    }
+}

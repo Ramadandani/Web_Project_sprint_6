@@ -1,0 +1,28 @@
+.content__images-delete {
+    background-image: url(../../../images/trash.png);
+    background-color: transparent;
+    background-size: cover;
+    border: none;
+    height: 36px;
+    width: 32px;
+    position: absolute;
+    z-index: 5;
+    top: 5%;
+    right: 5%;
+    cursor: pointer;
+}
+
+@media (max-width:320px){
+    .content__images-delete {
+        background-image: url(../../../images/trash.png);
+        background-color: transparent;
+        background-size: cover;
+        border: none;
+        height: 36px;
+        width: 32px;
+        position: absolute;
+        top: 5%;
+        right: 5%;
+        cursor: pointer;
+    }
+}

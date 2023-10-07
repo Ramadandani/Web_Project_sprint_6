@@ -1,0 +1,16 @@
+.header {
+    margin-top: 45px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 880px;
+    
+}
+
+@media (max-width: 320px ){
+    .header {
+        width: 320px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

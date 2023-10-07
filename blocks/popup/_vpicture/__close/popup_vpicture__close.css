@@ -1,0 +1,20 @@
+.popup_vpicture_close-btn {
+    background-image: url(../../../../images/Close_Icon.svg);
+    background-size: cover;
+    border: none;
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    top: -11.5%;
+    left: 100%;
+    background-color: transparent;
+    color: #fff;
+    text-align: left;
+    
+}
+
+.popup_vpicture_close-btn:hover {
+    transition: .15s linear;
+    opacity: .6;
+    cursor: pointer;
+}

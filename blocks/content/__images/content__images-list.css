@@ -1,0 +1,12 @@
+.content__images-list {
+    width: 282px;
+    height: 282px;
+    background-size: cover;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    box-sizing: border-box;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+

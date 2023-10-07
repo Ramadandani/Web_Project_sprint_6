@@ -1,0 +1,17 @@
+.content__images {
+    width: 282px;
+    transition: .2s linear;
+    position: relative;
+}
+
+.content__images:hover {
+    transform: scale(1.05);
+}
+
+@media (max-width: 320px ){
+    .content__images {
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
+    }
+}

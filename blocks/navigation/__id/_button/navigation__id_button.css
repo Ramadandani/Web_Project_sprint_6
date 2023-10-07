@@ -1,0 +1,26 @@
+.show_popup_edit-btn {
+    background-image: url(../../../../images/navigation_id_edit.svg);
+    background-size: cover;
+    border: none;
+    grid-area: button;
+    width: 27px;
+    height: 27px;
+    margin-top: 35px;
+    margin-left: 18px;
+    margin-bottom: 0px;
+}
+
+.show_popup_edit-btn:hover {
+    opacity: 80%;
+    cursor: pointer;
+}
+
+@media (max-width: 320px ){
+    .show_popup_edit-btn {
+        width: 18px;
+        height: 18px;
+        margin-left: 0;
+        display: flex;
+        justify-content: center;
+    }
+}

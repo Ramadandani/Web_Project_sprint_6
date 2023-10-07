@@ -1,0 +1,13 @@
+.navigation__id {
+    display: grid;
+    grid-template-areas: 
+    "name name button"
+    "job job .";
+    width: 415px;
+}
+
+@media (max-width: 320px ){
+    .navigation__id {
+        width: 282px;
+    }
+}

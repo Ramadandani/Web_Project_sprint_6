@@ -1,0 +1,9 @@
+.navigation__image-border {
+    width: 127.5px;
+    height: 127.5px;
+    box-sizing: border-box;
+    border: 1px black solid;
+    border-radius: 50%;
+    overflow: hidden;
+
+}

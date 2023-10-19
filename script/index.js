@@ -86,7 +86,7 @@ closeAddPictureBtn.addEventListener('click', function (){
 })
 
 
-renderTemplate(initialCards);
+
 
 // Manipulasi EDIT FORM START
 //Membuka Form Edit
@@ -155,13 +155,6 @@ function renderTemplate(data) {
             
         });
 
-
-        const cardLove = cloneContent.querySelector('.content__images-love-button');
-
-        cardLove.addEventListener('click', function(evt){
-            evt.target.classList.toggle('content__images-loved')
-        });
-
         const cardTrash = cloneContent.querySelector('.content__images-delete-btn');
         
         
@@ -169,19 +162,23 @@ function renderTemplate(data) {
           console.log(namaTempat)
 
           const namaTempatDelete = namaTempat;
-
-          const parentCard = namaTempatDelete.closest('.content__images');
-
-          if(parentCard){
-            parentCard.remove()
-          }
-
           
+          
+
+          initialCards = initialCards.filter(item => item.name !== namaTempatDelete);
+
+
+        
+          renderTemplate(initialCards);
         });
 
-        
+        const cardLove = cloneContent.querySelector('.content__images-love-button');
 
-        
+        cardLove.addEventListener('click', function(evt){
+            evt.target.classList.toggle('content__images-loved')
+        });
+
+
         contentCollection.append(cloneContent)
     }
 }
@@ -211,3 +208,4 @@ function renderTemplate(data) {
 
 
 
+renderTemplate(initialCards);

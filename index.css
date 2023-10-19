@@ -19,6 +19,7 @@
 @import url(./blocks/content/__delete/content__images-delete.css);
 @import url(./blocks/footer/footer.css);
 @import url(./blocks/footer/__copyright/footer__copyright.css);
+@import url(./blocks/popup/popup--none.css);
 @import url(./blocks/popup/_ename/popup_ename.css);
 @import url(./blocks/popup/_ename/_ename__open/popup_ename__open.css);
 @import url(./blocks/popup/_ename/_ename__close/popup_ename__close.css);

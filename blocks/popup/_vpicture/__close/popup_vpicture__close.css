@@ -1,4 +1,4 @@
-.popup_vpicture_close-btn {
+.popup__vpicture-close-btn {
     background-image: url(../../../../images/Close_Icon.svg);
     background-size: cover;
     border: none;
@@ -13,7 +13,7 @@
     
 }
 
-.popup_vpicture_close-btn:hover {
+.popup__vpicture-close-btn:hover {
     transition: .15s linear;
     opacity: .6;
     cursor: pointer;

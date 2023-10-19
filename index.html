@@ -21,21 +21,21 @@
             </div>
             <div class="navigation__id">
                 <h2 class="navigation__id-name">Ramadan</h2>
-                <button type="button" class="show_popup_edit-btn"></button>
+                <button class="navigation__id-showPopupEditBtn"></button>
                 <h5 class="navigation__id-job">Civil Engineering</h5>
             </div>
-            <button class="show_popup_add-btn" type="button"></button>
+            <button class="navigation__id-showPopupAddPlaceBtn"></button>
         </nav>
         <main class="content">
             <template class=" content content--gallery">
                 <div class="content__images">
-                    <button type="button" class="content__images-delete" aria-label="delete_button"></button>
+                    <button type="button" class="content__images-delete-btn" aria-label="delete_button"></button>
                     <div>
                         <img src="./images/content_1.jpg" alt="Pemandangan Gunung Semeru di Salatiga" class="content__images-list">
                         
                         <div class="content__images-id">
                             <p class="content__images-id-name">Salatiga</p>
-                            <button type="button" id="like" class="content__images-id-button" aria-label="love"></button>
+                            <button type="button" id="like" class="content__images-love-button" aria-label="love"></button>
                         </div>
                     </div>
                 </div>
@@ -47,9 +47,9 @@
     </div>
     <div class="popup">
         <!-- Popup Edit Name -->
-        <div class="popup__ename">
+        <div class="popup__ename popup__none">
             <h2 class="popup__ename-title">Edit Profil</h2>
-            <button class="close_popup_edit-btn"></button>
+            <button class="popup__close-editBtn"></button>
             <div class="popup__ename-form">
                 <input type="text" name="nama" id="nama" placeholder="Nama" class="popup__ename-form-text">
             </div>
@@ -61,15 +61,15 @@
             </div>
         </div>
         <!-- Popup View Picture -->
-        <div class="popup__vpicture">
+        <div class="popup__vpicture popup__none">
                 <img src="./images/content_1.jpg" alt="" class="popup__vpicture-pic">
-                <button class="popup_vpicture_close-btn"></button>
+                <button class="popup__vpicture-close-btn"></button>
                 <p class="popup__vpicture-place">Salatiga</p>
         </div>
         <!-- Popup Add Picture -->
-        <div class="popup__apicture">
-            <h2 class="popup__apicture-title">Tempat Baru</h2>
-            <button class="popup_apicture_close-btn"></button>
+        <div class="popup__apicture popup__none">
+            <h2 class="popup__apicture-title ">Tempat Baru</h2>
+            <button class="popup__apicture-close-btn"></button>
             <div class="popup__apicture-form">
                 <input type="text" name="Judul" id="Judul" placeholder="Judul" class="popup__apicture-form-text">
             </div>

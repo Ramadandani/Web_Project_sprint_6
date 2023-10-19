@@ -6,7 +6,7 @@
     position: fixed;
     top: 15%;
     left: 33%;
-    display: none;
+    z-index: 6;
     
 }
 

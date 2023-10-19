@@ -33,7 +33,7 @@
        text-overflow: ellipsis;
 }
 
-.content__images-id-button {
+.content__images-love-button {
     font-size: 35px;
     background-image: url(../../../../images/content_love.jpg);
     background-size: cover;
@@ -47,7 +47,7 @@
     
 }
 
-.content__images-id-button:hover {
+.content__images-love-button:hover {
     opacity: 50%;
     cursor: pointer;
     
@@ -62,12 +62,12 @@
     }
 }
 
-.content__images-id-liked {
+.content__images-loved {
     background-image: url(../../../../images/content_love1.jpg);
     animation-name: liked;
     animation-duration: .5s;
 }
 
-.content__images-id-liked:hover {
+.content__images-loved:hover {
     opacity: 1;
 }

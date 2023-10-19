@@ -1,4 +1,4 @@
-.show_popup_add-btn {
+.navigation__id-showPopupAddPlaceBtn {
     background-image: url(../../../images/navigation_button.jpg);
     background-size: cover;
     width: 150px;
@@ -9,13 +9,13 @@
     
 }
 
-.show_popup_add-btn:hover {
+.navigation__id-showPopupAddPlaceBtn:hover {
     opacity: 60%;
     cursor: pointer;
 }
 
 @media (max-width: 320px ){
-    .show_popup_add-btn {
+    .navigation__id-showPopupAddPlaceBtn {
         margin-left: 0;
         margin-top: 36px;
     }

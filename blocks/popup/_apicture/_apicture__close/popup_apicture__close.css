@@ -1,4 +1,4 @@
-.popup_apicture_close-btn {
+.popup__apicture-close-btn {
     background-image: url(../../../../images/Close_Icon.svg);
     background-size: cover;
     border: none;
@@ -13,13 +13,13 @@
     text-align: left;
 }
 
-.popup_apicture_close-btn:hover {
+.popup__apicture-close-btn:hover {
     opacity: 60%;
     cursor: pointer;
 }
 
 @media (max-width: 320px ){
-    .popup_apicture_close-btn {
+    .popup__apicture-close-btn {
         width: 26px;
         height: 26px;
         font-size: 26px;

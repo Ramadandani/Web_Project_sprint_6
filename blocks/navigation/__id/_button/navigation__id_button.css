@@ -1,4 +1,4 @@
-.show_popup_edit-btn {
+.navigation__id-showPopupEditBtn {
     background-image: url(../../../../images/navigation_id_edit.svg);
     background-size: cover;
     border: none;
@@ -10,13 +10,13 @@
     margin-bottom: 0px;
 }
 
-.show_popup_edit-btn:hover {
+.navigation__id-showPopupEditBtn:hover {
     opacity: 80%;
     cursor: pointer;
 }
 
 @media (max-width: 320px ){
-    .show_popup_edit-btn {
+    .navigation__id-showPopupEditBtn {
         width: 18px;
         height: 18px;
         margin-left: 0;

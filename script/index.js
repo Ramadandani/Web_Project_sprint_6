@@ -41,7 +41,7 @@ const closeShowPictureBtn = document.querySelector('.popup__vpicture-close-btn')
 
 
 // Data Template
-const initialCards = [
+let initialCards = [
     {
       name: "Lembah Yosemite",
       link: "https://practicum-content.s3.us-west-1.amazonaws.com/web-code/moved_yosemite.jpg"
@@ -86,7 +86,7 @@ closeAddPictureBtn.addEventListener('click', function (){
 })
 
 
-
+renderTemplate(initialCards);
 
 // Manipulasi EDIT FORM START
 //Membuka Form Edit
@@ -133,8 +133,8 @@ function renderTemplate(data) {
     contentCollection.innerHTML ='';
     
     for (let i = 0; i < data.length; i++){
-        const tempat = data[i].name;
-        const url = data[i].link;
+        const namaTempat = data[i].name;
+        const urlGambar = data[i].link;
 
         const cardContent = gallery.content;
         const cloneContent = cardContent.cloneNode(true);
@@ -142,34 +142,47 @@ function renderTemplate(data) {
         const cardPlace = cloneContent.querySelector('.content__images-id-name');
         const cardImg = cloneContent.querySelector('.content__images-list');
 
-        cardPlace.textContent = tempat;
-        cardImg.src = url;
+        cardPlace.textContent = namaTempat;
+        cardImg.src = urlGambar;
         
 
         // Event Popup Gambar
         cardImg.addEventListener('click', function(){
             popupShowPicture.classList.toggle('popup__none');
-            pic.src = url;
-            place.innerHTML = tempat;
+            pic.src = urlGambar;
+            place.innerHTML = namaTempat;
             body.style.opacity ='.5';
             
         });
 
-        const cardTrash = cloneContent.querySelector('.content__images-delete-btn');
-
-        cardTrash.addEventListener('click', function(){
-            initialCards.splice(i,1);
-            renderTemplate(initialCards);
-        });
 
         const cardLove = cloneContent.querySelector('.content__images-love-button');
 
-        cardLove.addEventListener('click', function(){
-            cardLove.classList.toggle('content__images-loved')
+        cardLove.addEventListener('click', function(evt){
+            evt.target.classList.toggle('content__images-loved')
         });
 
+        const cardTrash = cloneContent.querySelector('.content__images-delete-btn');
+        
+        
+        cardTrash.addEventListener('click', function(evt) {
+          console.log(namaTempat)
 
-        contentCollection.appendChild(cloneContent)
+          const namaTempatDelete = namaTempat;
+
+          const parentCard = namaTempatDelete.closest('.content__images');
+
+          if(parentCard){
+            parentCard.remove()
+          }
+
+          
+        });
+
+        
+
+        
+        contentCollection.append(cloneContent)
     }
 }
 
@@ -198,4 +211,3 @@ function renderTemplate(data) {
 
 
 
-renderTemplate(initialCards);

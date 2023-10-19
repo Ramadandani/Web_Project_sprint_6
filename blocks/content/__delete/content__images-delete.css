@@ -5,9 +5,9 @@
     border: none;
     height: 36px;
     width: 32px;
-    position: relative;
+    position: absolute;
     z-index: 5;
-    top: 13%;
+    top: 5%;
     left: 85%;
     cursor: pointer;
 }
